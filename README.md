@@ -36,7 +36,7 @@ It simulates a ransomware attack to showcase the security benefits of CSFLE.
 2. **CSFLE Integration:** CSFLE can be integrated into your application to encrypt sensitive data before it's transmitted to MongoDB Atlas.
 3. **Enhanced Protection:** The combination of MongoDB Atlas's security features and CSFLE creates a multi-layered defense that can significantly reduce the risk of ransomware attacks.
 
-**CSFLE is powered by Envelope Encryption**
+## CSFLE is powered by Envelope Encryption
 
 Envelope encryption is a cryptographic technique that involves using two layers of encryption to protect sensitive data. It's a core component of MongoDB's Queryable Encryption (QE) and provides a robust security mechanism.
 
