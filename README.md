@@ -52,6 +52,7 @@ client_encryption.create_encrypted_collection(client[encrypted_database_name], e
 encrypted_collection = client[encrypted_database_name][encrypted_collection_name]
 encrypted_collection.insert_one({"username": "test_user", "ssn": "123-45-6789"})
 print(list(encrypted_collection.aggregate([{"$match": {"ssn": "123-45-6789"}}])))
+#[{'_id': ObjectId('670128119965e019a8600e1e'), 'username': 'test_user', 'ssn': '123-45-6789', '__safeContent__': [b'\xd5\xdfm\xaf`\x85\x04T\xa65G\xe36\x1a\x10\xe8\x07\x84\xa5z\x15\xb7\xc8\xcb\xb0\x85d#\x1dp\xf7A']}]
 ```
 
 In the code above, we start by creating a data key for our local KMS. We then define the database and collection names, and specify the fields to be encrypted in the `encrypted_fields_map`. We create the encrypted collection and insert a document into it. Finally, we print the result of a query matching the encrypted field.
