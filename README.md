@@ -285,6 +285,6 @@ MongoDB Atlas offers several features that help mitigate the challenges associat
 3. **Network Isolation:** MongoDB Atlas allows you to isolate your database clusters from the public internet, reducing the risk of unauthorized access.
 4. **Role-Based Access Control (RBAC):** RBAC enables you to define different roles with specific permissions, ensuring that users only have access to the data and operations they need to perform their jobs.
 5. **Encryption at Rest and in Transit:** MongoDB Atlas encrypts data both while it's stored on disk and while it's being transmitted over the network, providing additional protection against unauthorized access.
-6. **Encryption in Use:** **MongoDB Atlas** and **Client-Side Field Level Encryption (CSFLE)** together provide a formidable defense against ransomware attacks. By combining the robust security features of MongoDB Atlas with the granular protection of CSFLE, organizations can significantly reduce their risk of falling victim to ransomware.
+6. **Encryption in Use:** **MongoDB Atlas** and **Client-Side Field Level Encryption (CSFLE)** together together can help organizations significantly reduce their risk of falling victim to ransomware.
 
 By leveraging these features, MongoDB Atlas helps organizations strengthen their defenses against data-layer ransomware attacks and mitigate the risks associated with compromised credentials and elevated privileges.
