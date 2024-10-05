@@ -159,3 +159,13 @@ Decrypted data from test_db; test_collection:
 ## Conclusion
 
 In this scenario, while the simulated ransomware attack managed to encrypt the entire MongoDB database, it's crucial to remember that **sensitive data remained protected** thanks to Client-Side Field Level Encryption (CSFLE). CSFLE encrypts these fields within the application itself, rendering them unreadable even if attackers gain access to the database. This powerful feature demonstrates the importance of layered security strategies to safeguard sensitive information in the face of evolving cyber threats. 
+
+## Limitations of Client-Side Field Level Encryption (CSFLE)
+
+While CSFLE offers a valuable layer of security for your MongoDB data, it's important to be aware of its limitations:
+
+* **Limited Encryption Scope:** CSFLE encrypts specific fields within documents, not entire documents or collections. This means attackers with access to the database can still potentially exploit unencrypted information.
+* **Key Management Challenges:** Securely managing the encryption keys used by CSFLE is crucial. Losing these keys renders the encrypted data permanently inaccessible. In the provided example, a local master key was used for simplicity, but in production environments, a robust Key Management Service (KMS) like AWS KMS or Google Cloud KMS is highly recommended.
+* **Performance Overhead:** Encryption and decryption processes associated with CSFLE can introduce slight performance overhead, especially for write-heavy workloads.
+* **Limited Query Capabilities:** CSFLE may not support all query types and operators on encrypted fields. Complex queries involving encrypted fields might require additional processing or workarounds. 
+* **Platform Dependence:** CSFLE compatibility varies depending on the MongoDB server version and driver used. Ensure your environment is compatible before implementing CSFLE.
