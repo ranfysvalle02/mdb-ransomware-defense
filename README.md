@@ -1,4 +1,4 @@
-# mdb-ransomware-defense
+# mdb-ransomware-risk-mitigation
 
 [Global Ransomware Damage Costs Predicted To Exceed $265 Billion By 2031](https://cybersecurityventures.com/global-ransomware-damage-costs-predicted-to-reach-250-billion-usd-by-2031/)
 
@@ -6,15 +6,15 @@
 
 This guide demonstrates CSFLE for educational purposes only. 
 
-It simulates a ransomware attack to showcase the security benefits of CSFLE. 
+It simulates a ransomware attack to showcase the risk mitigation benefits of CSFLE. 
 
 **In no way does this guide encourage or promote malicious activities.** 
 
 ![alt](https://securityintelligence.com/wp-content/uploads/2018/09/si-ransomware-101-feature-630x330.png)
 
-## MongoDB Atlas and CSFLE: A Powerful Defense Against Ransomware
+## MongoDB Atlas and CSFLE: A Powerful Strategy for Ransomware Risk Mitigation
 
-### Key Security Benefits
+### Key Risk Mitigation Benefits
 
 1. **Enhanced Data Protection:**
    * **Multiple Layers of Security:** MongoDB Atlas offers a range of security features, including encryption at rest and in transit, access controls, and network security. CSFLE adds another layer of protection by encrypting sensitive data before it leaves the client.
@@ -79,9 +79,10 @@ Envelope encryption is a cryptographic technique that involves using two layers 
 
 By understanding the principles of envelope encryption and its role in MongoDB's Client Side Field Level Encryption (CSFLE), you can make informed decisions about protecting sensitive data within your MongoDB applications.
 
-## Protecting Against Ransomware with MongoDB CSFLE
+## Mitigating Ransomware Risk with MongoDB CSFLE
 
-In this Github repo, we delve into the details of protecting our MongoDB data against potential ransomware attacks. This is achieved by implementing client-side field-level encryption using MongoDB Atlas and Python. CSFLE encrypts sensitive fields within your application before sending them to the database, ensuring their confidentiality even if attackers gain access.
+In this Github repo, we delve into the details of mitigating the risk of our MongoDB data against potential ransomware attacks. This is achieved by implementing client-side field-level encryption using MongoDB Atlas and Python. CSFLE encrypts sensitive fields within your application before sending them to the database, ensuring their confidentiality even if attackers gain access.
+
 ### Prerequisites
 
 We'll utilize the following Python libraries:
@@ -249,7 +250,7 @@ client['RANSOM_NOTE']['README'].insert_one({'note': 'Your data has been encrypte
 2024-10-05T07:50:41.744-0400	exported 1 record
 Confirm its still decryptable with the key:  b'qK2N6G8SEQ6OKquCdpGLvieWdprozfDUGfXbJfp65aM='
 Decrypted data from test_db; test_collection:
-{"_id":{"$oid":"670128119965e019a8600e1e"},"username":"test_user","ssn":{"$binary":{"base64":"DhInIwkz/0Wwo3nVQ+15dowC0EKRizwGdNTRSMAxwNqeOoJ35JQNZwBpTYA11qbIRTc2Lpk7fLfCAJ0vTMyMUmtEdpU2Scj0spb7Sqn9yyuwm/4BKpsl5zd//Hn0YTZmOEcFMTtnEmD0v5aOZyxHyJMtem5rcdXSXKOrn8qPFtZBzry/Co21aqzoEW4fbr9C5FyOUCHUELzUVDOqF586Yoru1d9tr2CFBFSmNUfjNhoQ6AeEpXoVt8jLsIVkIx1w90EndwIOqOTwNA1eUgX7nhkjWwYRHd3JY1zqhXHyoRvPAA==","subType":"06"}},"__safeContent__":[{"$binary":{"base64":"1d9tr2CFBFSmNUfjNhoQ6AeEpXoVt8jLsIVkIx1w90E=","subType":"00"}}]}
+{"_id":{"$oid":"670128119965e019a8600e1e"},"username":"test_user","ssn":{"$binary":{"base64":"DhInIwkz/0Wwo3nVQ+15dowC0EKRizwGdNTRSMAxwNqeOoJ35JQNZwBpTYA11qbIRTc2Lpk7fLfCAJ0vTMyMUmtEdpU2Scj0spb7Sqn9yyuwm/4BKpsl5zd//Hn0YTZmOEcFMTtnEmD0v5aOZyxHyJMtem5rcdXSXKOrn8qPFtZBzry/Co21aqzoEW4fbr9C5FyOUCHUELzUVDOqF586Yoru1d9tr2CFBFSmNUfjNhoQ6AeEpXoVt8jLsIVkIx1w90E=","subType":"06"}},"__safeContent__":[{"$binary":{"base64":"1d9tr2CFBFSmNUfjNhoQ6AeEpXoVt8jLsIVkIx1w90E=","subType":"00"}}]}
 ```
 
 ## Conclusion
@@ -290,4 +291,3 @@ MongoDB Atlas offers several features that help mitigate the challenges associat
 8. **Recovery Time Objective (RTO) and Recovery Point Objective (RPO):** MongoDB Atlas allows you to define your RTO and RPO, ensuring that you can recover your data within a specified timeframe and with minimal data loss.
 
 By leveraging these features, MongoDB Atlas helps organizations strengthen their defenses against data-layer ransomware attacks and mitigate the risks associated with compromised credentials, elevated privileges, and data loss.
-
