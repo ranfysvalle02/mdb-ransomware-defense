@@ -2,6 +2,14 @@
 
 [Global Ransomware Damage Costs Predicted To Exceed $265 Billion By 2031](https://cybersecurityventures.com/global-ransomware-damage-costs-predicted-to-reach-250-billion-usd-by-2031/)
 
+**Important Note:**
+
+This guide demonstrates CSFLE for educational purposes only. 
+
+It simulates a ransomware attack to showcase the security benefits of CSFLE. 
+
+**In no way does this guide encourage or promote malicious activities.** 
+
 ![alt](https://securityintelligence.com/wp-content/uploads/2018/09/si-ransomware-101-feature-630x330.png)
 
 # Protecting Against Ransomware with MongoDB CSFLE
