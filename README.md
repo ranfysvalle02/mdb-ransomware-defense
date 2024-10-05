@@ -146,6 +146,15 @@ for db_name in [db for db in client.list_database_names() if db not in ['admin',
 client['RANSOM_NOTE']['README'].insert_one({'note': 'Your data has been encrypted. Send 1 BTC to restore your data.'})
 ```
 
+## Output
+```
+2024-10-05T07:50:41.739-0400	connected to: mongodb://localhost/
+2024-10-05T07:50:41.744-0400	exported 1 record
+Confirm its still decryptable with the key:  b'qK2N6G8SEQ6OKquCdpGLvieWdprozfDUGfXbJfp65aM='
+Decrypted data from test_db; test_collection:
+{"_id":{"$oid":"670128119965e019a8600e1e"},"username":"test_user","ssn":{"$binary":{"base64":"DhInIwkz/0Wwo3nVQ+15dowC0EKRizwGdNTRSMAxwNqeOoJ35JQNZwBpTYA11qbIRTc2Lpk7fLfCAJ0vTMyMUmtEdpU2Scj0spb7Sqn9yyuwm/4BKpsl5zd//Hn0YTZmOEcFMTtnEmD0v5aOZyxHyJMtem5rcdXSXKOrn8qPFtZBzry/Co21aqzoEW4fbr9C5FyOUCHUELzUVDOqF586Yoru1d9tr2CFBFSmNUfjNhoQ6AeEpXoVt8jLsIVkIx1w90EndwIOqOTwNA1eUgX7nhkjWwYRHd3JY1zqhXHyoRvPAA==","subType":"06"}},"__safeContent__":[{"$binary":{"base64":"1d9tr2CFBFSmNUfjNhoQ6AeEpXoVt8jLsIVkIx1w90E=","subType":"00"}}]}
+```
+
 ## Conclusion
 
 In this scenario, while the simulated ransomware attack managed to encrypt the entire MongoDB database, it's crucial to remember that **sensitive data remained protected** thanks to Client-Side Field Level Encryption (CSFLE). CSFLE encrypts these fields within the application itself, rendering them unreadable even if attackers gain access to the database. This powerful feature demonstrates the importance of layered security strategies to safeguard sensitive information in the face of evolving cyber threats. 
