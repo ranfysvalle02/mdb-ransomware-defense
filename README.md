@@ -2,6 +2,8 @@
 
 [Global Ransomware Damage Costs Predicted To Exceed $265 Billion By 2031](https://cybersecurityventures.com/global-ransomware-damage-costs-predicted-to-reach-250-billion-usd-by-2031/)
 
+In the context of this GitHub repository, ransomware is referred to as a type of cyber attack where an attacker encrypts the data in a MongoDB database. The attacker then demands a ransom, typically in a cryptocurrency like Bitcoin, to provide the decryption key to restore the data. This repository demonstrates how to mitigate the risk of such attacks using MongoDB's Client-Side Field Level Encryption (CSFLE), which encrypts sensitive data within the application before it's stored in the database, rendering it unreadable even if a ransomware attack occurs.
+
 **Important Note:**
 
 This guide demonstrates CSFLE for educational purposes only. 
