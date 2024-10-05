@@ -276,7 +276,7 @@ Ransomware attacks targeting the data layer pose a unique challenge due to the p
 * **Elevated Privileges:** Compromised accounts might have elevated privileges, enabling attackers to perform actions that would normally be restricted.
 * **Insider Threats:** Employees with authorized access can potentially misuse their privileges to encrypt or delete data.
 
-## MongoDB Atlas's Differentiating Security Features
+## MongoDB Atlas Security Features
 
 MongoDB Atlas offers several features that help mitigate the challenges associated with data-layer ransomware:
 
@@ -285,6 +285,9 @@ MongoDB Atlas offers several features that help mitigate the challenges associat
 3. **Network Isolation:** MongoDB Atlas allows you to isolate your database clusters from the public internet, reducing the risk of unauthorized access.
 4. **Role-Based Access Control (RBAC):** RBAC enables you to define different roles with specific permissions, ensuring that users only have access to the data and operations they need to perform their jobs.
 5. **Encryption at Rest and in Transit:** MongoDB Atlas encrypts data both while it's stored on disk and while it's being transmitted over the network, providing additional protection against unauthorized access.
-6. **Encryption in Use:** **MongoDB Atlas** and **Client-Side Field Level Encryption (CSFLE)** together together can help organizations significantly reduce their risk of falling victim to ransomware.
+6. **Encryption in Use:** **MongoDB Atlas** and **Client-Side Field Level Encryption (CSFLE)** together can help organizations significantly reduce their risk of falling victim to ransomware.
+7. **Backup and Recovery:** MongoDB Atlas offers robust backup and recovery capabilities, including automatic backups, manual backups, and continuous backups. This ensures that you can restore your data in the event of a ransomware attack or other data loss.
+8. **Recovery Time Objective (RTO) and Recovery Point Objective (RPO):** MongoDB Atlas allows you to define your RTO and RPO, ensuring that you can recover your data within a specified timeframe and with minimal data loss.
 
-By leveraging these features, MongoDB Atlas helps organizations strengthen their defenses against data-layer ransomware attacks and mitigate the risks associated with compromised credentials and elevated privileges.
+By leveraging these features, MongoDB Atlas helps organizations strengthen their defenses against data-layer ransomware attacks and mitigate the risks associated with compromised credentials, elevated privileges, and data loss.
+
