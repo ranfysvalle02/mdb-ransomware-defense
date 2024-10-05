@@ -14,8 +14,6 @@ It simulates a ransomware attack to showcase the security benefits of CSFLE.
 
 ## MongoDB Atlas and CSFLE: A Powerful Defense Against Ransomware
 
-**MongoDB Atlas** and **Client-Side Field Level Encryption (CSFLE)** together provide a formidable defense against ransomware attacks. By combining the robust security features of MongoDB Atlas with the granular protection of CSFLE, organizations can significantly reduce their risk of falling victim to ransomware.
-
 ### Key Security Benefits
 
 1. **Enhanced Data Protection:**
