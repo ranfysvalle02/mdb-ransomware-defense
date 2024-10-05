@@ -1,6 +1,6 @@
 # mdb-ransomware-defense
 
-![alt](https://www.globalsign.com/application/files/5516/6488/2151/Ransomware.png)
+![alt](https://blog.cubbit.io/content/images/size/w1200/2023/02/cover2.jpg)
 
 # Protecting Against Ransomware with MongoDB CSFLE
 
