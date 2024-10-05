@@ -34,7 +34,7 @@ It simulates a ransomware attack to showcase the security benefits of CSFLE.
 
 1. **Data Encryption:** MongoDB Atlas encrypts data at rest and in transit, providing a strong foundation for data security.
 2. **CSFLE Integration:** CSFLE can be integrated into your application to encrypt sensitive data before it's transmitted to MongoDB Atlas.
-3. **Enhanced Protection:** The combination of MongoDB Atlas's security features and CSFLE creates a multi-layered defense that can significantly reduce the risk of ransomware attacks.
+3. **Enhanced Protection:** The combination of MongoDB Atlas's security features and CSFLE creates a multi-layered defense minimizing exposure of sensitive data.
 
 ## CSFLE is powered by Envelope Encryption
 
