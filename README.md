@@ -36,6 +36,49 @@ It simulates a ransomware attack to showcase the security benefits of CSFLE.
 2. **CSFLE Integration:** CSFLE can be integrated into your application to encrypt sensitive data before it's transmitted to MongoDB Atlas.
 3. **Enhanced Protection:** The combination of MongoDB Atlas's security features and CSFLE creates a multi-layered defense that can significantly reduce the risk of ransomware attacks.
 
+**CSFLE is powered by Envelope Encryption**
+
+Envelope encryption is a cryptographic technique that involves using two layers of encryption to protect sensitive data. It's a core component of MongoDB's Queryable Encryption (QE) and provides a robust security mechanism.
+
+### Understanding the Layers
+
+1. **Data Encryption Key (DEK):** This is a unique key generated for each piece of data to be encrypted. The DEK is used to directly encrypt and decrypt the data.
+2. **Customer Master Key (CMK):** The CMK is a key that protects the DEKs. It's typically stored in a secure hardware security module (HSM) or a cloud-based key management service.
+
+### The Encryption Process
+
+1. **Data Encryption:** The DEK is used to encrypt the sensitive data, creating a ciphertext.
+2. **DEK Encryption:** The DEK itself is encrypted using the CMK, creating a ciphertext for the DEK.
+3. **Storage:** Both the ciphertext (encrypted data) and the encrypted DEK are stored in the MongoDB database.
+
+### The Decryption Process
+
+1. **DEK Decryption:** The CMK is used to decrypt the encrypted DEK, retrieving the original DEK.
+2. **Data Decryption:** The DEK is used to decrypt the ciphertext, revealing the original data.
+
+### Benefits of Envelope Encryption
+
+* **Strong Security:** By using two layers of encryption, envelope encryption provides a high level of security against unauthorized access.
+* **Flexibility:** It allows for different encryption algorithms and key management strategies to be used for the DEK and CMK.
+* **Efficiency:** The DEK can be reused for multiple pieces of data, improving encryption efficiency.
+* **Compliance:** Envelope encryption can help organizations comply with data privacy regulations by ensuring sensitive data is protected at rest.
+
+**Visual Representation:**
+
+```
+[Plaintext] -> [DEK] -> [Ciphertext]
+[DEK] -> [CMK] -> [Encrypted DEK]
+```
+
+**Key Considerations:**
+
+* **CMK Management:** Ensure the CMK is stored securely and managed properly.
+* **DEK Rotation:** Regularly rotate DEKs to enhance security.
+* **Key Length:** Use appropriate key lengths for both the DEK and CMK to provide adequate security.
+* **Encryption Algorithms:** Choose strong encryption algorithms for both the DEK and CMK.
+
+By understanding the principles of envelope encryption and its role in MongoDB's Client Side Field Level Encryption (CSFLE), you can make informed decisions about protecting sensitive data within your MongoDB applications.
+
 ## Protecting Against Ransomware with MongoDB CSFLE
 
 In this Github repo, we delve into the details of protecting our MongoDB data against potential ransomware attacks. This is achieved by implementing client-side field-level encryption using MongoDB Atlas and Python. CSFLE encrypts sensitive fields within your application before sending them to the database, ensuring their confidentiality even if attackers gain access.
