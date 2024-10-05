@@ -1,5 +1,7 @@
 # mdb-ransomware-defense
 
+[Global Ransomware Damage Costs Predicted To Exceed $265 Billion By 2031](https://cybersecurityventures.com/global-ransomware-damage-costs-predicted-to-reach-250-billion-usd-by-2031/)
+
 ![alt](https://securityintelligence.com/wp-content/uploads/2018/09/si-ransomware-101-feature-630x330.png)
 
 # Protecting Against Ransomware with MongoDB CSFLE
