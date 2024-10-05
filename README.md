@@ -1,4 +1,7 @@
 # mdb-ransomware-defense
+
+![alt](https://www.globalsign.com/application/files/5516/6488/2151/Ransomware.png)
+
 # Protecting Against Ransomware with MongoDB CSFLE
 
 In this blog post, we delve into the details of protecting our MongoDB data against potential ransomware attacks. This is achieved by implementing client-side field-level encryption using MongoDB Atlas and Python. CSFLE encrypts sensitive fields within your application before sending them to the database, ensuring their confidentiality even if attackers gain access.
