@@ -1,6 +1,6 @@
 # mdb-ransomware-defense
 
-![alt](https://blog.cubbit.io/content/images/size/w1200/2023/02/cover2.jpg)
+![alt](https://securityintelligence.com/wp-content/uploads/2018/09/si-ransomware-101-feature-630x330.png)
 
 # Protecting Against Ransomware with MongoDB CSFLE
 
